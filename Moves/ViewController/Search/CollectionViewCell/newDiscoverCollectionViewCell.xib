@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="newDiscoverCollectionViewCell" id="Ibe-gI-abV" customClass="newDiscoverCollectionViewCell" customModule="FoodTok" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="153" height="158"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="pdv-pR-uok">
+                <rect key="frame" x="0.0" y="0.0" width="153" height="158"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="videoPlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="riy-2q-ote">
+                        <rect key="frame" x="2" y="0.0" width="149" height="158"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tab to view more content" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nd2-8F-Ix3">
+                        <rect key="frame" x="20" y="67" width="113" height="24"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="10"/>
+                        <color key="textColor" name="darkGrey"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="nd2-8F-Ix3" firstAttribute="leading" secondItem="pdv-pR-uok" secondAttribute="leading" constant="20" id="1mr-Bb-RJa"/>
+                    <constraint firstItem="nd2-8F-Ix3" firstAttribute="centerY" secondItem="pdv-pR-uok" secondAttribute="centerY" id="CQ6-4F-JAN"/>
+                    <constraint firstAttribute="bottom" secondItem="riy-2q-ote" secondAttribute="bottom" id="F3V-WF-FTV"/>
+                    <constraint firstItem="nd2-8F-Ix3" firstAttribute="centerX" secondItem="pdv-pR-uok" secondAttribute="centerX" id="JcP-tV-cAN"/>
+                    <constraint firstAttribute="trailing" secondItem="riy-2q-ote" secondAttribute="trailing" constant="2" id="XKb-Nx-dWI"/>
+                    <constraint firstItem="riy-2q-ote" firstAttribute="leading" secondItem="pdv-pR-uok" secondAttribute="leading" constant="2" id="fcu-E3-vun"/>
+                    <constraint firstItem="riy-2q-ote" firstAttribute="top" secondItem="pdv-pR-uok" secondAttribute="top" id="lNU-b6-zLH"/>
+                    <constraint firstAttribute="trailing" secondItem="nd2-8F-Ix3" secondAttribute="trailing" constant="20" id="tb2-uT-djF"/>
+                </constraints>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                </userDefinedRuntimeAttributes>
+            </collectionViewCellContentView>
+            <size key="customSize" width="153" height="158"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="img" destination="riy-2q-ote" id="Kbb-Dz-anV"/>
+                <outlet property="lbl" destination="nd2-8F-Ix3" id="lwW-13-5gp"/>
+            </connections>
+            <point key="canvasLocation" x="63" y="20"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="videoPlaceholder" width="118" height="176"/>
+        <namedColor name="darkGrey">
+            <color red="0.43500000238418579" green="0.43500000238418579" blue="0.43500000238418579" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="VideoEditPopupCollectionViewCell" id="gTV-IL-0wX" customClass="VideoEditPopupCollectionViewCell" customModule="FoodTok" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="BJU-S7-hGG">
+                        <rect key="frame" x="0.0" y="14" width="100" height="72.333333333333329"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_delete 1" translatesAutoresizingMaskIntoConstraints="NO" id="YNl-5y-9Hj">
+                                <rect key="frame" x="25" y="0.0" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="HNP-wF-Kns"/>
+                                    <constraint firstAttribute="width" constant="50" id="gjJ-6g-5qO"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delete Video" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gwV-6Q-JOG">
+                                <rect key="frame" x="0.0" y="58.000000000000007" width="100" height="14.333333333333336"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="gwV-6Q-JOG" firstAttribute="leading" secondItem="BJU-S7-hGG" secondAttribute="leading" id="SW8-YT-2zD"/>
+                            <constraint firstAttribute="trailing" secondItem="gwV-6Q-JOG" secondAttribute="trailing" id="gG4-EG-CTe"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="BJU-S7-hGG" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="14" id="7Dx-Og-KTk"/>
+                <constraint firstAttribute="trailing" secondItem="BJU-S7-hGG" secondAttribute="trailing" id="IF8-d5-yW4"/>
+                <constraint firstItem="BJU-S7-hGG" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="OZX-AG-Dit"/>
+                <constraint firstItem="BJU-S7-hGG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="qkQ-QM-HJ1"/>
+            </constraints>
+            <connections>
+                <outlet property="imgVideoEdit" destination="YNl-5y-9Hj" id="ik3-qI-yb6"/>
+                <outlet property="lblVideoEdit" destination="gwV-6Q-JOG" id="dJd-xo-LZa"/>
+            </connections>
+            <point key="canvasLocation" x="74.809160305343511" y="19.718309859154932"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_delete 1" width="38" height="38"/>
+    </resources>
+</document>

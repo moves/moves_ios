@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-Moves/Pods-Moves-resources.sh
+${PODS_CONFIGURATION_BUILD_DIR}/GoogleMaps/GoogleMapsResources.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/GooglePlaces/GooglePlacesResources.bundle
+${PODS_ROOT}/ZFPlayer/ZFPlayer/Classes/ControlView/ZFPlayer.bundle

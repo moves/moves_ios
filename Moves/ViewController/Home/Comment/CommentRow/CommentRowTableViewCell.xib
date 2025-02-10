@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CommentRowTableViewCell" id="336-OD-Scd" customClass="CommentRowTableViewCell" customModule="FoodTok" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="336-OD-Scd" id="LXG-bc-Poh">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="videoPlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="BEo-CV-z87" customClass="CustomImageView" customModule="FoodTok" customModuleProvider="target">
+                        <rect key="frame" x="51" y="0.0" width="26" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="26" id="7d0-yv-A5c"/>
+                            <constraint firstAttribute="width" constant="26" id="vgo-gg-PM4"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornarRadius">
+                                <real key="value" value="13"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lSS-Ng-wTn">
+                        <rect key="frame" x="82" y="0.0" width="25" height="11"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="9"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="upq-Ug-sAC">
+                        <rect key="frame" x="82" y="16" width="168" height="14.333333333333336"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xa0-lK-0m7">
+                        <rect key="frame" x="290" y="27.666666666666671" width="7" height="11"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="9"/>
+                        <color key="textColor" name="barColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eqy-Sb-Qn0">
+                        <rect key="frame" x="82" y="38.333333333333336" width="55" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="QDY-1s-2f5"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="9"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" title="Hide replies">
+                            <color key="titleColor" name="barColor"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hKt-t0-2Zq">
+                        <rect key="frame" x="287" y="9" width="13" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="13" id="UKO-3j-CAj"/>
+                            <constraint firstAttribute="height" constant="13" id="se3-jk-jDJ"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="Heart 1"/>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d3i-OK-M4c">
+                        <rect key="frame" x="51" y="46" width="26" height="1"/>
+                        <color key="backgroundColor" name="lightGrey"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Tjz-sA-3r6"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eEA-uO-lPx">
+                        <rect key="frame" x="287" y="0.0" width="33" height="38.666666666666664"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="d3i-OK-M4c" firstAttribute="leading" secondItem="BEo-CV-z87" secondAttribute="leading" id="0cD-Th-gmu"/>
+                    <constraint firstItem="eEA-uO-lPx" firstAttribute="leading" secondItem="hKt-t0-2Zq" secondAttribute="leading" id="1cZ-Ay-phn"/>
+                    <constraint firstItem="Xa0-lK-0m7" firstAttribute="top" secondItem="hKt-t0-2Zq" secondAttribute="bottom" constant="5.6666666666666714" id="1pX-n0-w7P"/>
+                    <constraint firstItem="eEA-uO-lPx" firstAttribute="bottom" secondItem="Xa0-lK-0m7" secondAttribute="bottom" id="5SO-4E-3lP"/>
+                    <constraint firstItem="eEA-uO-lPx" firstAttribute="top" secondItem="LXG-bc-Poh" secondAttribute="top" id="GIT-1C-3s5"/>
+                    <constraint firstItem="upq-Ug-sAC" firstAttribute="leading" secondItem="BEo-CV-z87" secondAttribute="trailing" constant="5" id="HFR-h6-XbE"/>
+                    <constraint firstItem="Eqy-Sb-Qn0" firstAttribute="top" secondItem="upq-Ug-sAC" secondAttribute="bottom" constant="8" id="HJu-52-Pbt"/>
+                    <constraint firstItem="lSS-Ng-wTn" firstAttribute="top" secondItem="LXG-bc-Poh" secondAttribute="top" id="PzG-Nt-Bx4"/>
+                    <constraint firstItem="hKt-t0-2Zq" firstAttribute="top" secondItem="LXG-bc-Poh" secondAttribute="top" constant="9" id="QiP-Ei-bOB"/>
+                    <constraint firstItem="BEo-CV-z87" firstAttribute="leading" secondItem="LXG-bc-Poh" secondAttribute="leading" constant="51" id="R2i-ht-jaT"/>
+                    <constraint firstItem="hKt-t0-2Zq" firstAttribute="leading" secondItem="upq-Ug-sAC" secondAttribute="trailing" constant="37" id="UkI-XV-k3S"/>
+                    <constraint firstItem="upq-Ug-sAC" firstAttribute="top" secondItem="lSS-Ng-wTn" secondAttribute="bottom" constant="5" id="asn-Vc-DEf"/>
+                    <constraint firstItem="Eqy-Sb-Qn0" firstAttribute="leading" secondItem="upq-Ug-sAC" secondAttribute="leading" id="dQV-T8-W9Y"/>
+                    <constraint firstItem="BEo-CV-z87" firstAttribute="top" secondItem="LXG-bc-Poh" secondAttribute="top" id="fX3-03-eX8"/>
+                    <constraint firstItem="lSS-Ng-wTn" firstAttribute="leading" secondItem="BEo-CV-z87" secondAttribute="trailing" constant="5" id="knH-Kj-oWV"/>
+                    <constraint firstAttribute="trailing" secondItem="eEA-uO-lPx" secondAttribute="trailing" id="mbO-B3-ee8"/>
+                    <constraint firstItem="Xa0-lK-0m7" firstAttribute="centerX" secondItem="hKt-t0-2Zq" secondAttribute="centerX" id="qYG-2U-DdP"/>
+                    <constraint firstItem="d3i-OK-M4c" firstAttribute="trailing" secondItem="BEo-CV-z87" secondAttribute="trailing" id="r8V-xr-l4I"/>
+                    <constraint firstItem="d3i-OK-M4c" firstAttribute="centerY" secondItem="Eqy-Sb-Qn0" secondAttribute="centerY" id="s4p-sm-aT8"/>
+                    <constraint firstAttribute="trailing" secondItem="hKt-t0-2Zq" secondAttribute="trailing" constant="20" id="ygT-LK-P6f"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="Gxt-0E-usV"/>
+            <connections>
+                <outlet property="btnHeart" destination="hKt-t0-2Zq" id="2oP-wl-5RE"/>
+                <outlet property="btnLargeLike" destination="eEA-uO-lPx" id="nKd-Dr-yKp"/>
+                <outlet property="btnViewMoreReply" destination="Eqy-Sb-Qn0" id="0Cc-E0-tnp"/>
+                <outlet property="imgProfile" destination="BEo-CV-z87" id="5FT-js-1Wa"/>
+                <outlet property="lblComment" destination="upq-Ug-sAC" id="7Ed-wE-2jT"/>
+                <outlet property="lblCommentCount" destination="Xa0-lK-0m7" id="ObE-6V-p0m"/>
+                <outlet property="lblName" destination="lSS-Ng-wTn" id="rqG-WJ-NCK"/>
+                <outlet property="lineView" destination="d3i-OK-M4c" id="MXB-jN-hQi"/>
+                <outlet property="moreReplyView" destination="d3i-OK-M4c" id="nZM-7v-URS"/>
+            </connections>
+            <point key="canvasLocation" x="74.809160305343511" y="19.718309859154932"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="BEo-CV-z87">
+            <size key="intrinsicContentSize" width="118" height="176"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="Heart 1" width="13" height="11.666666984558105"/>
+        <image name="videoPlaceholder" width="118" height="176"/>
+        <namedColor name="barColor">
+            <color red="0.76899999380111694" green="0.76899999380111694" blue="0.76899999380111694" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="lightGrey">
+            <color red="0.9570000171661377" green="0.9570000171661377" blue="0.9570000171661377" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

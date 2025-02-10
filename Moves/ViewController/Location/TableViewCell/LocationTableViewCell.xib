@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="sf-pro-text-regular.ttf">
+            <string>SFProText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="LocationTableViewCell" id="KGk-i7-Jjw" customClass="LocationTableViewCell" customModule="FoodTok" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="324" height="45"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="324" height="45"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 8" translatesAutoresizingMaskIntoConstraints="NO" id="eqo-Js-19g">
+                        <rect key="frame" x="13" y="7" width="31" height="31"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="31" id="Ec5-0j-JVL"/>
+                            <constraint firstAttribute="height" constant="31" id="XH4-Wp-5XB"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="qpt-Md-wZc">
+                        <rect key="frame" x="50" y="6" width="261" height="33.333333333333336"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="San Francisco" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bMi-hz-f8Y">
+                                <rect key="frame" x="0.0" y="0.0" width="261" height="16.666666666666668"/>
+                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CA, USA" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s7Y-dg-J9K">
+                                <rect key="frame" x="0.0" y="16.666666666666664" width="261" height="16.666666666666664"/>
+                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="12"/>
+                                <color key="textColor" name="darkGrey"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="bMi-hz-f8Y" secondAttribute="trailing" id="5sh-uG-jrs"/>
+                            <constraint firstItem="s7Y-dg-J9K" firstAttribute="leading" secondItem="qpt-Md-wZc" secondAttribute="leading" id="rD3-pM-g85"/>
+                            <constraint firstItem="bMi-hz-f8Y" firstAttribute="leading" secondItem="qpt-Md-wZc" secondAttribute="leading" id="u9b-De-8Zt"/>
+                            <constraint firstAttribute="trailing" secondItem="s7Y-dg-J9K" secondAttribute="trailing" id="zmh-u1-TJf"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="eqo-Js-19g" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="NUu-rf-dbz"/>
+                    <constraint firstItem="qpt-Md-wZc" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="T40-nF-xWv"/>
+                    <constraint firstAttribute="trailing" secondItem="qpt-Md-wZc" secondAttribute="trailing" constant="13" id="VwC-dg-jQ1"/>
+                    <constraint firstItem="eqo-Js-19g" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="13" id="a5a-X0-SlF"/>
+                    <constraint firstItem="qpt-Md-wZc" firstAttribute="leading" secondItem="eqo-Js-19g" secondAttribute="trailing" constant="6" id="oUG-rB-6vm"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblLocation" destination="s7Y-dg-J9K" id="JJ1-qH-bAg"/>
+                <outlet property="lblLocationName" destination="bMi-hz-f8Y" id="FB1-5q-lw9"/>
+            </connections>
+            <point key="canvasLocation" x="129.7709923664122" y="-11.619718309859156"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Group 8" width="31" height="31"/>
+        <namedColor name="darkGrey">
+            <color red="0.43500000238418579" green="0.43500000238418579" blue="0.43500000238418579" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

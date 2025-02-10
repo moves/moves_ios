@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SearchTableViewCell" rowHeight="214" id="lAx-iI-eHR" customClass="SearchTableViewCell" customModule="FoodTok" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="214"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lAx-iI-eHR" id="qVI-0c-kN3">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="214"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hashIcon" translatesAutoresizingMaskIntoConstraints="NO" id="6fc-uq-Ugp" customClass="CustomImageView" customModule="FoodTok" customModuleProvider="target">
+                        <rect key="frame" x="13" y="0.0" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="DSg-Vu-10j"/>
+                            <constraint firstAttribute="height" constant="40" id="SaR-h0-5WH"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornarRadius">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isCircle" value="YES"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="buma" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vXG-Ig-jS8">
+                        <rect key="frame" x="58" y="0.0" width="38" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="linesCornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="skeletonLineSpacing">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trending hashtag" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AUj-c7-Esh">
+                        <rect key="frame" x="57.999999999999993" y="25.666666666666668" width="98.333333333333314" height="14.333333333333332"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" name="barColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="linesCornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="skeletonLineSpacing">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="49 Posts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ll2-UC-rFw">
+                        <rect key="frame" x="341" y="12.666666666666664" width="51" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" name="black"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="linesCornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="skeletonLineSpacing">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.forward" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ash-g4-jJQ">
+                        <rect key="frame" x="392" y="15.666666666666668" width="9" height="8.9999999999999964"/>
+                        <color key="tintColor" name="black"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="9" id="0Nv-sv-0tE"/>
+                            <constraint firstAttribute="height" constant="12.666666666666657" id="Twa-Du-7cP"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="AVS-oD-ZO3">
+                        <rect key="frame" x="13" y="48" width="401" height="158"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="1" minimumInteritemSpacing="1" id="Mdr-c0-SoY">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </collectionView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LCH-Ih-OxC">
+                        <rect key="frame" x="341" y="12.666666666666664" width="60" height="15"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="AVS-oD-ZO3" firstAttribute="leading" secondItem="qVI-0c-kN3" secondAttribute="leading" constant="13" id="10y-RT-dlC"/>
+                    <constraint firstItem="LCH-Ih-OxC" firstAttribute="top" secondItem="Ll2-UC-rFw" secondAttribute="top" id="66L-lf-WcF"/>
+                    <constraint firstItem="AUj-c7-Esh" firstAttribute="leading" secondItem="6fc-uq-Ugp" secondAttribute="trailing" constant="5" id="6fr-pD-iiS"/>
+                    <constraint firstItem="AVS-oD-ZO3" firstAttribute="top" secondItem="6fc-uq-Ugp" secondAttribute="bottom" constant="8" id="7Px-NL-ibi"/>
+                    <constraint firstAttribute="bottom" secondItem="AVS-oD-ZO3" secondAttribute="bottom" constant="8" id="8dU-ie-YZy"/>
+                    <constraint firstItem="6fc-uq-Ugp" firstAttribute="leading" secondItem="qVI-0c-kN3" secondAttribute="leading" constant="13" id="Bd7-vK-8mK"/>
+                    <constraint firstItem="LCH-Ih-OxC" firstAttribute="trailing" secondItem="ash-g4-jJQ" secondAttribute="trailing" id="GUL-A2-TCE"/>
+                    <constraint firstItem="vXG-Ig-jS8" firstAttribute="leading" secondItem="6fc-uq-Ugp" secondAttribute="trailing" constant="5" id="Rr0-iQ-jde"/>
+                    <constraint firstItem="ash-g4-jJQ" firstAttribute="centerY" secondItem="6fc-uq-Ugp" secondAttribute="centerY" id="URz-Ed-fJu"/>
+                    <constraint firstAttribute="trailing" secondItem="ash-g4-jJQ" secondAttribute="trailing" constant="13" id="Ub7-7p-zU1"/>
+                    <constraint firstItem="6fc-uq-Ugp" firstAttribute="top" secondItem="qVI-0c-kN3" secondAttribute="top" id="Zn3-fU-N06"/>
+                    <constraint firstAttribute="trailing" secondItem="AVS-oD-ZO3" secondAttribute="trailing" id="e3I-Eo-9bb"/>
+                    <constraint firstItem="Ll2-UC-rFw" firstAttribute="centerY" secondItem="ash-g4-jJQ" secondAttribute="centerY" id="gFV-XW-7QR"/>
+                    <constraint firstItem="LCH-Ih-OxC" firstAttribute="leading" secondItem="Ll2-UC-rFw" secondAttribute="leading" id="klX-aD-fQW"/>
+                    <constraint firstItem="AUj-c7-Esh" firstAttribute="bottom" secondItem="6fc-uq-Ugp" secondAttribute="bottom" id="nxm-6N-hbA"/>
+                    <constraint firstItem="ash-g4-jJQ" firstAttribute="leading" secondItem="Ll2-UC-rFw" secondAttribute="trailing" id="qq1-tJ-e5E"/>
+                    <constraint firstItem="vXG-Ig-jS8" firstAttribute="top" secondItem="6fc-uq-Ugp" secondAttribute="top" id="wiF-dN-wp1"/>
+                    <constraint firstItem="LCH-Ih-OxC" firstAttribute="bottom" secondItem="Ll2-UC-rFw" secondAttribute="bottom" id="yQl-7k-Agu"/>
+                </constraints>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                </userDefinedRuntimeAttributes>
+            </tableViewCellContentView>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="btnPost" destination="LCH-Ih-OxC" id="afJ-sC-icK"/>
+                <outlet property="discoverCollectionView" destination="AVS-oD-ZO3" id="OYf-zy-dG7"/>
+                <outlet property="hashName" destination="vXG-Ig-jS8" id="dBY-N9-JUk"/>
+                <outlet property="hashNameSub" destination="AUj-c7-Esh" id="kpA-X7-fXV"/>
+                <outlet property="lblVideoCount" destination="Ll2-UC-rFw" id="N2F-de-xZe"/>
+            </connections>
+            <point key="canvasLocation" x="62.595419847328245" y="19.718309859154932"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="6fc-uq-Ugp">
+            <size key="intrinsicContentSize" width="60" height="60"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="chevron.forward" catalog="system" width="97" height="128"/>
+        <image name="hashIcon" width="60" height="60"/>
+        <namedColor name="barColor">
+            <color red="0.76899999380111694" green="0.76899999380111694" blue="0.76899999380111694" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="black">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
